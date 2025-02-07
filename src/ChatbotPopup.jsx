@@ -27,6 +27,19 @@ const ChatbotPopup = ({ theme }) => {
     }, 500);
 
     setMessage("");
+
+    // 2 options for scolling automatically to last message in chatbox
+
+    const objDiv = document.getElementsByClassName("chatbot-body")[0];
+    objDiv.scrollTop = objDiv.scrollHeight;
+
+    // const messages = document.querySelectorAll(".chatbot-body .chat-message");
+    // if (messages.length > 0) {
+    //   messages[messages.length - 1].scrollIntoView({
+    //     behavior: "smooth",
+    //     block: "end",
+    //   });
+    // }
   };
 
   const handleKeyPress = (e) => {

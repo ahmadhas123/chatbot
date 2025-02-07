@@ -50,10 +50,11 @@
 
 .chatbot-info::after {
   content: " ";
-  background-color: transparent;
+  background-color: #43b581;
+  border: 1px solid white;
   position: absolute;
-  top: 35px;
-  left: 34px;
+  top: 34px;
+  left: 33px;
   height: 9px;
   width: 9px;
   border-radius: 50%;
